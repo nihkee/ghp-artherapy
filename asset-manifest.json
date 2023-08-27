@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ghp-artherapy/static/css/main.073c9b0a.css",
+    "main.js": "/ghp-artherapy/static/js/main.ac993838.js",
+    "static/js/787.45328c7a.chunk.js": "/ghp-artherapy/static/js/787.45328c7a.chunk.js",
+    "static/media/logo.svg": "/ghp-artherapy/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/ghp-artherapy/index.html",
+    "main.073c9b0a.css.map": "/ghp-artherapy/static/css/main.073c9b0a.css.map",
+    "main.ac993838.js.map": "/ghp-artherapy/static/js/main.ac993838.js.map",
+    "787.45328c7a.chunk.js.map": "/ghp-artherapy/static/js/787.45328c7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.ac993838.js"
+  ]
+}
