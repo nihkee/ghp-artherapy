@@ -1,38 +1,278 @@
-.App {
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier";
+  
+}
+
+body {
+  overflow-x: hidden;
+  }
+
+.pages h1, .donate h1 {
+  text-shadow: -5px 0 #fefae0;
+}
+
+.about h1, .gallery h1 {
+  text-shadow: 3px 0 #a5a58d;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/*nav bar start*/
+
+.logo {
+  margin-left: 20px;
+}
+
+.heroLink:link, .heroLink:visited {
+  color:#F1FAEE;
+  text-decoration: none;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  color: #F1FAEE;
+  background-color: #07270b;
+  z-index: 1;
+}
+
+.navBar {
+  margin-left: auto;
+}
+
+header * {
+  display: inline;
+}
+
+header li {
+  padding: 20px;
+}
+
+header li:hover {
+  background-color: #1D3557;
+}
+
+header li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*nav bar end*/
+
+/*hero starts*/
+.hero {
+  background-image: url(../attachments/hero4.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.heroText {
+  margin-top: 115px;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #07270b;
+  background-color: rgb(165, 165, 141, .5);
+  text-shadow: -5px 0 #fefae0, 0 10px #a5a58d, 10px 0 #a5a58d, 0 -10px #a5a58d;
+
+}
+
+.title {
+  font-size: 7rem;
+  font-family: "Brush Script MT";
+}
+/*hero end*/
+
+/*about start*/
+
+.about {
+  margin-top: 100vh;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  background-color: #fefae0;
+  color: #07270b;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  border: 7px double #07270b;
+}
+
+.aboutText {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+/*about end*/
+
+/*pages starts*/
+
+.pages {
+  padding-top: 4%;
+  padding-bottom: 5%;
+  background-color: #d9d9c5;
+
+}
+
+.pagesText {
+  text-align: center;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 1%;
+}
+
+.emailLink1:link, .emailLink1:visited {
+  color:#07270b;
+}
+
+.pageImagesContainer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Courier";
+  background-color: #07270b;
+  color: #F1FAEE;
+}
+/*pages ends*/
+
+/*gallery starts*/
+
+.gallery {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #fefae0;
+  border: 7px double #07270b;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.galleryText {
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-top: 0%;
+  padding-bottom: 0%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gallery button {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size: 1em;
+}
+
+.galleryImgContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0.25em;
 }
 
-.App-link {
-  color: #61dafb;
+/* RESPONSIVE IMG */
+.galleryImg img { width: 100%; }
+.galleryImg {
+  z-index: 0;
+  max-width: 500px;
+  position: relative;
+}
+ 
+/* POSITION CAPTION */
+.hovercap {
+  color: #fefae0;
+  /* COVER OVER ENTIRE IMAGE */
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+ 
+  /* CENTER CONTENT */
+  display: flex; justify-content: center; align-items: center;
+}
+ 
+/* ONLY SHOW CAPTION ON HOVER */
+.hovercap {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+}
+.galleryImg:hover .hovercap {
+  visibility: visible; opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*gallery ends*/
+
+/*donate starts*/
+
+.donate {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #BFC4AC;
 }
+
+.donateText {
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 0.25%;
+}
+
+.donate button {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size: 1em;
+}
+
+/*donate ends*/
+
+/*footer starts*/
+
+.footer {
+  text-align: center;
+  background-color: #07270b;
+  color:#F1FAEE;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.emailLink2:link, .emailLink2:visited {
+  color:#F1FAEE;
+}
+
+.footer p {
+  font-size: 1em;
+}
+
+/*footer ends*/
