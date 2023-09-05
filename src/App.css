@@ -18,7 +18,7 @@ body {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 /*nav bar start*/
@@ -38,12 +38,13 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 80px;
+  height: 55px;
   display: flex;
   align-items: center;
   color: #F1FAEE;
   background-color: #07270b;
   z-index: 1;
+  font-size: 1em;
 }
 
 .navBar {
@@ -55,11 +56,12 @@ header * {
 }
 
 header li {
-  padding: 20px;
+  padding: 15px;
 }
 
 header li:hover {
-  background-color: #1D3557;
+  background-color: #a5a58d;
+  color: #07270b;
 }
 
 header li a {
@@ -87,9 +89,9 @@ header li a {
 }
 
 .heroText {
-  margin-top: 115px;
-  padding-top: 25vh;
-  padding-bottom: 25vh;
+  margin-top: 0;
+  padding-top: 32vh;
+  padding-bottom: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,6 +166,7 @@ button {
   background-color: #07270b;
   color: #F1FAEE;
 }
+
 /*pages ends*/
 
 /*gallery starts*/
@@ -172,6 +175,8 @@ button {
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
   background-color: #fefae0;
   border: 7px double #07270b;
 }
@@ -276,3 +281,50 @@ button {
 }
 
 /*footer ends*/
+
+/* mobile responsiveness starts */
+
+
+/*
+/* If the screen size is 401 wide or more...
+@media (min-width: 401px) {
+  .heroText {
+    font-size: 80px;
+  }
+}
+*/
+
+/* If the screen size is 400px wide or less...*/
+@media (max-width: 800px) {
+  .title {
+    font-size: 5em;
+
+  }
+
+  .pageImg {
+    width: max-width;
+  }
+
+  .pageImg img {
+    width: max-width;
+    height: 200px;
+  }
+
+  .header {
+    font-size: .8em;
+  }
+
+  li {
+    font-size: .8em;
+  }
+
+  p {
+    font-size: .75em;
+  }
+
+  .footer p {
+    font-size: .8em;
+  }
+}
+
+/* mobile responsiveness ends */ 
