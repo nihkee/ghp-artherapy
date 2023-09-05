@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ghp-artherapy/static/css/main.05329f07.css",
+    "main.css": "/ghp-artherapy/static/css/main.1f80cc1a.css",
     "main.js": "/ghp-artherapy/static/js/main.b9f0b353.js",
     "static/js/787.45328c7a.chunk.js": "/ghp-artherapy/static/js/787.45328c7a.chunk.js",
     "static/media/hero4.jpeg": "/ghp-artherapy/static/media/hero4.79c0b0626f1075262ead.jpeg",
@@ -20,12 +20,12 @@
     "static/media/BeachFrogsM.jpeg": "/ghp-artherapy/static/media/BeachFrogsM.bd7a6189b235684d1527.jpeg",
     "static/media/Nikki.jpeg": "/ghp-artherapy/static/media/Nikki.a00e0a649de276f96021.jpeg",
     "index.html": "/ghp-artherapy/index.html",
-    "main.05329f07.css.map": "/ghp-artherapy/static/css/main.05329f07.css.map",
+    "main.1f80cc1a.css.map": "/ghp-artherapy/static/css/main.1f80cc1a.css.map",
     "main.b9f0b353.js.map": "/ghp-artherapy/static/js/main.b9f0b353.js.map",
     "787.45328c7a.chunk.js.map": "/ghp-artherapy/static/js/787.45328c7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05329f07.css",
+    "static/css/main.1f80cc1a.css",
     "static/js/main.b9f0b353.js"
   ]
 }
